@@ -13,7 +13,7 @@ RUN apt-get update && \
 WORKDIR /app
 #RUN dpkg -L tesseract-ocr
 #RUN dpkg -L tesseract-ocr-lao
-#RUN ls
+RUN LS /app
 COPY requirements.txt requirements.txt
 
 RUN pip install -r requirements.txt
