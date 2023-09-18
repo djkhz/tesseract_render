@@ -9,10 +9,11 @@ RUN apt-get update && \
     apt-get -qq -y install libxrender1 && \
     apt-get -qq -y install libfontconfig1 && \
     apt-get -qq -y install libice6 
-RUN dpkg -L tesseract-ocr
+
 WORKDIR /app
-RUN dpkg -L tesseract-ocr-lao
-RUN ls
+#RUN dpkg -L tesseract-ocr
+#RUN dpkg -L tesseract-ocr-lao
+#RUN ls
 COPY requirements.txt requirements.txt
 
 RUN pip install -r requirements.txt
