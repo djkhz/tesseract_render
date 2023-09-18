@@ -15,7 +15,6 @@ WORKDIR /app
 #RUN dpkg -L tesseract-ocr-lao
 RUN dir -s    
 # OR See everything (in a windows container)...
-RUN dir /s
 
 COPY requirements.txt requirements.txt
 
