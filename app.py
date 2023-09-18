@@ -1,20 +1,58 @@
+#import json, requests
+#import os
+#import io
+#import base64
+#import subprocess
+#from flask import Flask
+#from PIL import Image
+#import pytesseract
+#import cv2
+#import regex as rx
+#import numpy as np
+#import pandas as pd
+#import array
+
 import json, requests
 import os
 import io
 import base64
 import subprocess
-from flask import Flask
-from PIL import Image
+import sys
+import logging
+import shutil
+from flask import Flask, jsonify, request, redirect, url_for, render_template, send_from_directory,flash,current_app
+# from werkzeug import secure_filename
+from werkzeug.utils import secure_filename
+import flask_sijax
+try:
+    from PIL import Image
+except ImportError:
+    import Image
 import pytesseract
 import cv2
 import regex as rx
 import numpy as np
 import pandas as pd
 import array
+from laonlp.tokenize import word_tokenize as ltoken
+from nltk import word_tokenize
+import pyreadr
+import re
+import urllib.request
+import string
 
-app = Flask(__name__)
 
-
+#app = Flask(__name__)
+app = Flask(__name__, static_url_path="/static")
+app.logger.addHandler(logging.StreamHandler(sys.stdout))
+app.logger.setLevel(logging.ERROR)
+mode = 'RGB' # for color image “L” (luminance) for greyscale images, “RGB” for true color images, and “CMYK” for pre-press images.
+size = (640, 480)
+color = (73, 109, 137)
+Imageocr = Image.new(mode, size, color)
+Imnp =np.array([])
+# app.some_model = pd.read_excel("/app/data/sila_data.xlsx", sheet_name="Book lala", keep_default_na= False, na_values=[""])
+pytesseract.pytesseract.tesseract_cmd = '/app/.apt/usr/bin/tesseract'
 
 @app.route('/')
 def hello_world():
