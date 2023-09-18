@@ -40,7 +40,7 @@ requests
 
 
 #dj-database-url==0.4.1
-psycopg2
+#psycopg2
 whitenoise
 #laonlp==0.2.dev1
 #freeze
