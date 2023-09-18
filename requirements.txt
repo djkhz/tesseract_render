@@ -18,8 +18,8 @@ click==7.1.2
 itsdangerous==1.1.0
 
 MarkupSafe==1.1.1
-# opencv-python==4.3.0.38
-opencv-python-headless
+opencv-python==4.3.0.38
+#opencv-python-headless
 
 gunicorn==20.0.4
 Jinja2==2.11.2
