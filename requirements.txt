@@ -47,3 +47,5 @@ requests>=2.22.0
 tinydb==4.5.1 
 virtualenv==15.1.0 
 whitenoise==2.0.6
+nltk==3.6.2
+pyreadr==0.4.2
