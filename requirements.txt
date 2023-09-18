@@ -49,5 +49,6 @@ numpy
 pandas
 openpyxl
 nltk
+#pyreadr==0.42
 pyreadr
 # xlrd
