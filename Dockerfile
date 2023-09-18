@@ -13,9 +13,7 @@ RUN apt-get update && \
 WORKDIR /app
 
 COPY requirements.txt requirements.txt
-CMD python
-CMD import nltk
-CMD nltk.download()
+RUN python3 -m nltk.downloader punkt
 
 RUN pip install -r requirements.txt
 
