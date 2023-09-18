@@ -67,23 +67,23 @@ def ocr():
     
 @app.route('/ocx', methods=['GET','POST'])
 def ocx():
-    pytesseract.pytesseract.tesseract_cmd = '/app/.usr/bin/tesseract'
     # test.png from the pytesseract project: https://github.com/madmaze/pytesseract/tree/master/tests/data
     #return pytesseract.get_tesseract_version()
+    pytesseract.pytesseract.tesseract_cmd = '/app/.usr/bin/tesseract'
     return pytesseract.image_to_string(Image.open('test.png'), lang='eng')
 
 @app.route('/ocy', methods=['GET','POST'])
 def ocxy():
-    pytesseract.pytesseract.tesseract_cmd = '/app/usr/bin/tesseract'
     # test.png from the pytesseract project: https://github.com/madmaze/pytesseract/tree/master/tests/data
     #return pytesseract.get_tesseract_version()
+    pytesseract.pytesseract.tesseract_cmd = '/app/usr/bin/tesseract'
     return pytesseract.image_to_string(Image.open('test.png'), lang='eng')
 
 @app.route('/ocz', methods=['GET','POST'])
 def ocxz():
-    pytesseract.pytesseract.tesseract_cmd = '/usr/bin/tesseract'
     # test.png from the pytesseract project: https://github.com/madmaze/pytesseract/tree/master/tests/data
     #return pytesseract.get_tesseract_version()
+    pytesseract.pytesseract.tesseract_cmd = '/usr/bin/tesseract'
     return pytesseract.image_to_string(Image.open('test.png'), lang='eng')
         
 @app.errorhandler(404)
