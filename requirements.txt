@@ -7,30 +7,30 @@
 #opencv-python-headless
 
 
-Flask==1.1.2
-Flask-Sijax==0.4.1
-Flask-Babel==0.11.2
-Flask-Cors==3.0.2
+Flask
+Flask-Sijax
+Flask-Babel
+Flask-Cors
 #Flask-Login==0.4.0
 #Flask-Mail==0.9.1
-Flask-OpenID==1.2.5
+Flask-OpenID
 #Flask-SQLAlchemy==2.2
 #Flask-WhooshAlchemy==0.56
-Flask-WTF==0.14.2
+Flask-WTF
 #buttercms-python==0.7
 
-click==7.1.2
-itsdangerous==1.1.0
+click
+itsdangerous
 
-MarkupSafe==1.1.1
+MarkupSafe
 # opencv-python==4.3.0.38
 opencv-python-headless
 
-gunicorn==20.0.4
-Jinja2==2.11.2
+gunicorn
+Jinja2
 
 pep8==1.7.0
-python-dateutil==2.6.0
+#python-dateutil==2.6.0
 
 #redis==2.10.5
 requests==2.12.4
