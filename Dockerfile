@@ -11,8 +11,8 @@ RUN apt-get update && \
 #    apt-get -qq -y install libice6 
 
 WORKDIR /app
-Run dpkg -L tesseract-ocr
-Run dpkg -L tesseract-ocr-lao
+RUN dpkg -L tesseract-ocr
+RUN dpkg -L tesseract-ocr-lao
 #COPY requirements.txt requirements.txt
 
 #RUN pip install -r requirements.txt
