@@ -43,6 +43,7 @@ requests
 #psycopg2
 whitenoise
 #laonlp==0.2.dev1
+laonlp
 #freeze
 pytesseract
 #fastai
