@@ -44,8 +44,8 @@ import string
 
 #app = Flask(__name__)
 app = Flask(__name__, static_url_path="/static")
-app.logger.addHandler(logging.StreamHandler(sys.stdout))
-app.logger.setLevel(logging.ERROR)
+#app.logger.addHandler(logging.StreamHandler(sys.stdout))
+#app.logger.setLevel(logging.ERROR)
 mode = 'RGB' # for color image “L” (luminance) for greyscale images, “RGB” for true color images, and “CMYK” for pre-press images.
 size = (640, 480)
 color = (73, 109, 137)
