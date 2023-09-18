@@ -13,6 +13,10 @@ RUN apt-get update && \
 WORKDIR /app
 
 COPY requirements.txt requirements.txt
+CMD python
+CMD import nltk
+CMD nltk.download()
+
 RUN pip install -r requirements.txt
 
 COPY . .
