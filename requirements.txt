@@ -45,5 +45,5 @@ pytz==2021.1
 regex==2021.7.6 
 requests==2.12.4 
 tinydb==4.5.1 
-virtualenv-15.1.0 
-whitenoise-2.0.6
+virtualenv==15.1.0 
+whitenoise==2.0.6
