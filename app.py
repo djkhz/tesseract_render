@@ -52,7 +52,7 @@ color = (73, 109, 137)
 Imageocr = Image.new(mode, size, color)
 Imnp =np.array([])
 # app.some_model = pd.read_excel("/app/data/sila_data.xlsx", sheet_name="Book lala", keep_default_na= False, na_values=[""])
-pytesseract.pytesseract.tesseract_cmd = '/app/.apt/usr/bin/tesseract'
+#pytesseract.pytesseract.tesseract_cmd = '/app/usr/bin/tesseract'
 
 @app.route('/')
 def hello_world():
