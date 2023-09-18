@@ -10,7 +10,7 @@
 Flask==1.1.2
 Flask-Sijax==0.4.1
 Flask-Babel
-Flask-Cors=
+Flask-Cors
 Flask-OpenID
 Flask-WTF
 
