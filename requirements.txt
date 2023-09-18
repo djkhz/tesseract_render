@@ -7,8 +7,8 @@
 #opencv-python-headless
 
 
-Flask==1.1.2
-Flask-Sijax==0.4.1
+Flask
+Flask-Sijax
 Flask-Babel
 Flask-Cors
 Flask-OpenID
