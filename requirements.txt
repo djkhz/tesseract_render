@@ -4,3 +4,4 @@ gunicorn
 regex
 numpy
 pandas
+opencv-python-headless
