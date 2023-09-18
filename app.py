@@ -66,7 +66,7 @@ def ocr():
     return pytesseract.image_to_string(Image.open('test.png'), lang='eng')
     
 @app.route('/ocx', methods=['GET','POST'])
-def ocr():
+def ocx():
     pytesseract.pytesseract.tesseract_cmd = '/app/.usr/bin/tesseract'
     # test.png from the pytesseract project: https://github.com/madmaze/pytesseract/tree/master/tests/data
     #return pytesseract.get_tesseract_version()
