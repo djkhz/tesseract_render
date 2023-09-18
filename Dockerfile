@@ -17,7 +17,8 @@ COPY requirements.txt requirements.txt
 
 RUN pip install -r requirements.txt
 
-RUN python3 -m nltk.downloader punkt
+#RUN python3 -m nltk.downloader punkt
+RUN [ "python3", "-c", "import nltk; nltk.download('punkt', download_dir='/usr/local/nltk_data')" ]
 
 COPY . .
 
