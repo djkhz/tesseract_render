@@ -13,9 +13,10 @@ RUN apt-get update && \
 WORKDIR /app
 
 COPY requirements.txt requirements.txt
-RUN python3 -m nltk.downloader punkt
 
 RUN pip install -r requirements.txt
+
+RUN python3 -m nltk.downloader punkt
 
 COPY . .
 
