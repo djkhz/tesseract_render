@@ -14,7 +14,7 @@ WORKDIR /app
 #RUN dpkg -L tesseract-ocr
 #RUN dpkg -L tesseract-ocr-lao
 
-RUN ls /usr/bin/apt
+#RUN ls /usr/bin/
 
 
 # OR See everything (in a windows container)...
@@ -27,5 +27,5 @@ RUN pip install -r requirements.txt
 RUN [ "python3", "-c", "import nltk; nltk.download('punkt', download_dir='/usr/local/nltk_data')" ]
 
 COPY . .
-RUN ls /app
+#RUN ls /app
 CMD ["gunicorn", "app:app"]
