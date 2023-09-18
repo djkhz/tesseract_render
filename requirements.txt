@@ -7,33 +7,33 @@
 #opencv-python-headless
 
 
-Flask
-Flask-Sijax
-Flask-Babel
-Flask-Cors
+Flask==1.1.2
+Flask-Sijax==0.4.1
+Flask-Babel==0.11.2
+Flask-Cors==3.0.2
 #Flask-Login==0.4.0
 #Flask-Mail==0.9.1
-Flask-OpenID
+Flask-OpenID==1.2.5
 #Flask-SQLAlchemy==2.2
 #Flask-WhooshAlchemy==0.56
-Flask-WTF
+Flask-WTF==0.14.2
 #buttercms-python==0.7
 
-click
-itsdangerous
+click==7.1.2
+itsdangerous==1.1.0
 
-MarkupSafe
+MarkupSafe==1.1.1
 # opencv-python==4.3.0.38
 opencv-python-headless
 
-gunicorn
-Jinja2
+gunicorn==20.0.4
+Jinja2==2.11.2
 
-pep8
-python-dateutil
+pep8==1.7.0
+#python-dateutil==2.6.0
 
 #redis==2.10.5
-requests
+requests==2.12.4
 # requests
 #requests-oauthlib==0.8.0
 
@@ -42,10 +42,7 @@ Werkzeug==1.0.1
 
 WTForms==2.1
 
-#dj-database-url==0.4.1
-#psycopg2
-whitenoise
-#laonlp==0.2.dev1
+whitenoise==2.0.6
 laonlp
 #freeze
 pytesseract
