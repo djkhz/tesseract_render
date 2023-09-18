@@ -13,7 +13,8 @@ RUN apt-get update && \
 WORKDIR /app
 #RUN dpkg -L tesseract-ocr
 #RUN dpkg -L tesseract-ocr-lao
-RUN dir -s    
+RUN dir
+RUN ls 
 # OR See everything (in a windows container)...
 
 COPY requirements.txt requirements.txt
