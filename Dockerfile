@@ -14,7 +14,7 @@ WORKDIR /app
 #RUN dpkg -L tesseract-ocr
 #RUN dpkg -L tesseract-ocr-lao
 
-RUN ls ./.usr/bin
+RUN ls ./usr/bin
 # OR See everything (in a windows container)...
 
 COPY requirements.txt requirements.txt
