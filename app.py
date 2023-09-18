@@ -44,8 +44,8 @@ import string
 
 #app = Flask(__name__)
 app = Flask(__name__, static_url_path="/static")
-app.logger.addHandler(logging.StreamHandler(sys.stdout))
-app.logger.setLevel(logging.ERROR)
+#app.logger.addHandler(logging.StreamHandler(sys.stdout))
+#app.logger.setLevel(logging.ERROR)
 mode = 'RGB' # for color image “L” (luminance) for greyscale images, “RGB” for true color images, and “CMYK” for pre-press images.
 size = (640, 480)
 color = (73, 109, 137)
@@ -53,13 +53,12 @@ Imageocr = Image.new(mode, size, color)
 Imnp =np.array([])
 # app.some_model = pd.read_excel("/app/data/sila_data.xlsx", sheet_name="Book lala", keep_default_na= False, na_values=[""])
 #pytesseract.pytesseract.tesseract_cmd = '/app/usr/bin/tesseract'
-
 @app.route('/')
 def hello_world():
     return 'Hello, World!'
 
-@app.route('/ocr', methods=['GET','POST'])
-def ocr():
+@app.route('/test', methods=['GET','POST'])
+def test():
     # test.png from the pytesseract project: https://github.com/madmaze/pytesseract/tree/master/tests/data
     #return pytesseract.get_tesseract_version()
     return 'hot'
