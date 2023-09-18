@@ -14,8 +14,6 @@ Flask-Cors
 Flask-OpenID
 Flask-WTF
 
-click==7.1.2
-itsdangerous==1.1.0
 
 MarkupSafe==1.1.1
 opencv-python==4.3.0.38
