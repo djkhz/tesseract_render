@@ -6,6 +6,11 @@ import subprocess
 from flask import Flask
 from PIL import Image
 import pytesseract
+import cv2
+import regex as rx
+import numpy as np
+import pandas as pd
+import array
 
 app = Flask(__name__)
 
