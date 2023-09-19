@@ -28,4 +28,4 @@ RUN [ "python3", "-c", "import nltk; nltk.download('punkt', download_dir='/usr/l
 
 COPY . .
 #RUN ls /app
-CMD ["gunicorn", "app:app"]
+CMD ["gunicorn", "app:app", "--preload"]
